@@ -9,14 +9,32 @@
     <div class="container">
       <header>Random Pokémon Generator</header>
       <div id="content">
-        <img src="null" alt="Pokemon" class="main-image" />
-        <div id="buttons">
-          <button>Random Pokémon</button>
-          Or
-          <form method="post">
-            <input type="text" placeholder="🔎 Search by name" />
-            <input type="submit" value="Search" />
-          </form>
+        <div class="pokemon">
+          <h3 id="title">Random pokemon</h3>
+          <img
+            src="null"
+            alt="Pokemon"
+            id="main-image"
+            width="300"
+            height="300"
+          />
+        </div>
+
+        <div class="main-bottom">
+          <h3 id="error">No pokemon named name exists.</h3>
+          <div id="buttons">
+            <button id="random-button">Random Pokémon</button>
+            Or
+            <form method="post" id="form">
+              <input
+                required
+                type="text"
+                placeholder="🔎 Search by name"
+                name="name"
+              />
+              <input type="submit" value="Search" id="submit" />
+            </form>
+          </div>
         </div>
       </div>
       <footer>
